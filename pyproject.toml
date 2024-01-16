@@ -1,0 +1,17 @@
+[project]
+name = "mutator"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Piotr Smialkowski", email = "p.smialkowski@gmail.com"},
+]
+dependencies = [
+    "aiohttp>=3.9.1",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
