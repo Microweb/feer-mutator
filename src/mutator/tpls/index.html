@@ -1,0 +1,13 @@
+<h1>{{ organization.name }}</h1>
+<h2>{{ period }}</h2>
+<table> <tr><th>Project</th><th>Duration</th></tr>
+{% for project in organization.projects %}
+    <tr><th colspan="2">{{ project.name }} (id={{ project.id }})</th></tr>
+    {% for activity in project.activities %}
+        <tr>
+            <td>{{ activity.user.name }}</td>
+            <td>{{ activity.duration }}</td>
+        </tr>
+    {% endfor %}
+{% endfor %}
+</table>

@@ -1,10 +1,14 @@
 import os
+from pathlib import Path
 
-AUTH_EMAIL = os.getenv("AUTH_EMAIL", "p.smialkowski@gmail.com")
-AUTH_PASSWORD = os.getenv("AUTH_PASSWORD", "EGRT58MG")
-APP_TOKEN = os.getenv("APP_TOKEN", "K1S496Q79PNOGFGV")
+
+AUTH_EMAIL = os.environ["AUTH_EMAIL"]
+AUTH_PASSWORD = os.environ["AUTH_PASSWORD"]
+APP_TOKEN = os.environ["APP_TOKEN"]
+
+ORGANIZATION_NAME = os.environ["ORGANIZATION_NAME"]
+ROOT = Path(os.environ["ROOT"])
 
 API_BASE_URL = "https://mutator.reef.pl/v316/"
 
-ORGANIZATION_NAME = os.getenv("ORGANIZATION_NAME", "rt-bot-650")
-
+VERSION = "0.1.0"
